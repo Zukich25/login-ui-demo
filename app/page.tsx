@@ -3,9 +3,16 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="login-page relative min-h-screen flex items-center justify-center p-5 sm:p-8">
-      <div className="brand absolute left-5 top-5 flex items-center gap-2 sm:left-8 sm:top-8">
-        <span className="inline-block h-3 w-3 rounded-full bg-[#5865f2]" />
-        <p className="text-sm font-semibold tracking-wide text-white sm:text-base">PixelVerse UI Demo</p>
+      <div className="brand absolute left-5 top-5 sm:left-8 sm:top-8">
+        <div className="relative h-5 w-[104px] overflow-hidden sm:h-6 sm:w-[122px]">
+          <Image
+            src="/logo.png"
+            alt="Discord"
+            fill
+            className="object-cover object-left"
+            priority
+          />
+        </div>
       </div>
 
       <section className="login-card w-full max-w-[784px] rounded-[6px] bg-[#313338] px-4 py-6 text-white shadow-2xl sm:px-8 sm:py-8">
