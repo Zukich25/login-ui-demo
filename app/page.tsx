@@ -16,9 +16,6 @@ export default function Home() {
       </div>
 
       <section className="login-card w-full max-w-[784px] rounded-[6px] bg-[#313338] px-4 py-6 text-white shadow-2xl sm:px-8 sm:py-8">
-        <p className="mb-4 text-center text-xs text-[#b5bac1]">
-          Educational project only. This page does not collect or store credentials.
-        </p>
         <div className="flex flex-col gap-8 md:flex-row md:gap-10">
           <div className="w-full md:w-[60%]">
             <h1 className="mb-2 text-center text-[32px] font-bold leading-none">
@@ -46,11 +43,11 @@ export default function Home() {
             />
 
             <p className="mb-4 cursor-pointer text-sm text-[#00a8fc] hover:underline">
-              Forgot your demo password?
+              Forgot your password?
             </p>
 
             <button className="h-11 w-full rounded-[4px] bg-[#5865f2] text-[16px] font-medium transition hover:bg-[#4752c4] active:translate-y-[1px]">
-              Continue (Demo)
+              Log In
             </button>
 
             <p className="mt-4 text-sm text-[#949ba4]">
@@ -63,19 +60,19 @@ export default function Home() {
             <div className="qr mb-4 h-44 w-44 rounded bg-white p-2 shadow-[0_0_0_1px_rgba(0,0,0,0.12)]">
               <Image
                 src="/qr.png"
-                alt="Demo QR code"
+                alt="Discord QR code"
                 width={176}
                 height={176}
                 className="h-full w-full rounded-sm object-cover"
                 priority
               />
             </div>
-            <h2 className="mb-2 max-w-[220px] text-[18px] font-semibold leading-[1.15]">Sign in with QR</h2>
+            <h2 className="mb-2 max-w-[220px] text-[18px] font-semibold leading-[1.15]">Log in with QR Code</h2>
             <p className="max-w-[230px] text-[13px] leading-[1.35] text-[#b5bac1]">
-              Scan with the PixelVerse demo app for a visual-only login flow.
+              Scan this with the Discord mobile app to log in instantly.
             </p>
             <p className="mt-2 cursor-pointer text-[13px] text-[#00a8fc] hover:underline">
-              Or use demo passkey
+              Or, sign in with passkey
             </p>
           </aside>
         </div>
